@@ -1,0 +1,181 @@
+@media only screen and (min-width: 1036px)  {
+@font-face {
+    font-family: ABeeZee;
+    src: url(font/ABeeZee-Regular.otf);
+}
+body{
+    font-family: ABeeZee;
+}
+.conteneur{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+
+}
+.item1{
+    background: #FFCC00;
+    flex-basis: 25%;
+    text-align: center;
+}
+.item2{
+    margin-left: 35px;
+    flex-basis: 75%;
+}
+.avatar{
+    padding-top: 20px;
+}
+h3.contact, h3.aproposdemoi, h3.loisirs{
+    background-color: #333;
+    color: #FFCC00;
+    margin: 15px 0px;
+    font-variant-caps: all-petite-caps;
+    font-size: 25px; 
+}
+p.contact{
+    text-align: left;   
+    /*font-variant: small-caps;*/
+    color: #333;
+    font-weight: bold;
+    width: 90%;
+    margin: 0px auto 10px auto;
+}
+p.apropos{
+    text-align: justify;
+    width: 90%;
+    margin: 0px auto;
+}
+h3.loisirs{
+    margin-top: 300px;
+}
+.picto{
+    max-width: 18%;
+}
+h1{
+    font-size: 58px;
+    margin-bottom: 0px;
+}
+.prenom{
+    color: #FFCC00;
+    font-weight: bold;
+}
+.nom{
+    font-weight: lighter;
+}
+h2{
+    font-variant: small-caps;
+    font-weight: 600px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    letter-spacing: 0.239em;
+}
+.couleur_jaune{
+    border-bottom: 3px solid #FFCC00;
+}
+.conteneur2, .conteneur3, .conteneur4{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.item3, .item5, .item7{
+    min-height: 90px;
+    width: 250px;
+    margin: 0px;
+}
+.item4, .item6, .item8{
+    min-height: 90px;
+    width: 400px;
+    margin: 0px;
+
+}
+ul.dateFormation, ul.descriptionFormation, ul.dateExperience, ul.descriptionExperience, ul.recommandation1, ul.recommandation2{
+    list-style: none;
+}
+li.premiere_puce{
+    list-style-image: url('images/puce1.png');
+    margin-right: 5px;
+}
+h3.souligneF, h3.souligneE, h3.souligneR{
+    border-bottom: 4px solid #FFCC00;
+}
+h3.souligneF{
+    background: url("images/toge.png") no-repeat  center left;
+    padding-left: 45px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-top: 65px;
+    font-size: 20px;
+    font-weight: bold;
+}
+h3.souligneE{
+    background: url("images/entreprise.png") no-repeat  center left;
+    padding-left: 45px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: bold;
+}
+h3.souligneR{
+    background: url("images/stylo.png") no-repeat  center left;
+    padding-left: 45px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+}
+/*CSS pour affichage mobile & tablette */
+
+
+@media only screen and (max-width: 1035px) {
+    @font-face {
+    font-family: ABeeZee;
+    src: url(font/ABeeZee-Regular.otf);
+}
+body{
+    font-family: ABeeZee;
+    margin-left: 10px;
+    margin-right: auto;
+}
+.item1, .banniere{
+    text-align: center;
+}
+.avatar {
+    margin-bottom: 100px;
+    text-align: top;
+}
+h3.contact, h3.aproposdemoi, h3.loisirs, h3.souligneF, h3.souligneE, h3.souligneR{
+    background-color: #FFCC00;
+    text-align: center;
+}
+.picto{
+    max-width: 35px;
+}
+.prenom{
+    color: #FFCC00;
+    font-weight: bold; 
+}
+.nom{
+    font-weight: lighter;
+}
+li.premiere_puce{
+    list-style-image: url('images/puce1.png');
+}    
+ul.dateFormation, ul.descriptionFormation, ul.descriptionExperience, ul.dateExperience, ul.recommandation1, ul.recommandation2{
+    list-style: none;
+}
+.banniere{
+    position: absolute;
+    margin-top: -630px;
+    margin-left: 35px;
+}
+.formation{
+    margin-top: -10px;
+}
+.contact{
+    margin-top: 10px;
+}
+}
