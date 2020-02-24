@@ -1,19 +1,12 @@
-body{
-    margin: 0px;
-    padding: 0px;
-}
-
-/*CSS pour affichage mobile & tablette */
-@media only screen and (max-width: 1035px) {
-    @font-face {
+@font-face {
     font-family: ABeeZee;
     src: url(font/ABeeZee-Regular.otf);
 }
 .conteneurPrincipal {
     display: flex;
     flex-direction: column;
-    padding: 10px;
-}
+    padding-right: 10px;
+   }
 body{
     font-family: ABeeZee;
     margin-left: 10px;
@@ -49,7 +42,11 @@ p.contact, p.apropos, .picto{
     text-decoration: none;
 }
 .picto{
-    max-width: 45px;  
+    max-height: 40px;    
+    border: 2px solid #333;
+    border-radius: 50%;
+    padding: 2px;
+    margin: 10px;
 }
 .banniere {
     display: flex;
@@ -77,34 +74,33 @@ p.contact, p.apropos, .picto{
     display: flex;
     flex-direction: column;       
 }
-p.premierePuce{
-    background: url('images/puce1.png') no-repeat left;
+.puce{
     padding-left: 15px;
     margin-bottom: 0px;
 }
+p.premierePuce{
+    background: url('images/puce1.png') no-repeat left;
+}
 p.deuxiemePuce{
     background: url("images/puce2.png") no-repeat left;
-    padding-left: 15px;
-    margin-bottom: 0px;
 }   
 .dateFormation, .descriptionFormation, .descriptionExperience, .dateExperience, ul.recommandation1, ul.recommandation2{
     list-style: none;
 }
 .souligne{
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
-    padding: 10px 0px 10px 35px;  
+    padding: 10px 0px 15px 60px;  
     border-bottom: 2px solid #FFCC00;
 }
 .mortier{
     background: url("images/mortier.png") no-repeat  center left;
 }    
 .entreprise{
-    background: url("images/entreprise.png") no-repeat  center left;    
+    background: url("images/cartable.png") no-repeat  center left;    
 }
 .stylo{
     background: url("images/stylo.png") no-repeat  center left;
-    font-size: 22px;   
 }
 .lieu{
     margin-top: 0px;
@@ -119,21 +115,22 @@ h4{
     background-color:#FFF;
     padding: 10px;
     margin: 10px 0px 10px 0px;
-/*arrondir les coins en haut à gauche et en bas à droite*/   
+/*arrondi coins haut gauche et bas droite*/   
     border: 3px solid #fff;
     -moz-box-shadow: 8px 8px 12px #aaa; 
     -webkit-box-shadow: 8px 8px 12px #aaa; 
     box-shadow: 8px 8px 12px #555;
 }
-}
+
 /*CSS pour écran*/
-@media only screen and (min-width: 1036px)  {
+@media only screen and (min-width: 1024px)  {
 @font-face {
     font-family: ABeeZee;
     src: url(font/ABeeZee-Regular.otf);
 }
 body{
     font-family: ABeeZee;
+    margin: 0px;
 }
 .conteneurPrincipal{
     margin: 0px;
@@ -151,6 +148,7 @@ body{
     flex-basis: 25%;
     text-align: center;
     grid-area: sidebar;
+    margin-top: 0px;
     order: 3;  
 }
 .parcours{
@@ -161,10 +159,12 @@ body{
     grid-area: parcours;
     order: 4;
 }
-#avatar{
-    padding: 20px 0px 0px 80px;
+#avatar{    
     background-color: #FFCC00;
-    margin-bottom: 0px;    
+    margin: 0px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
     grid-area: avatar;
     order: 1;      
 }
@@ -191,12 +191,12 @@ p.apropos{
     margin-top: 600px;
 }
 .picto{    
-   max-width: 80px;    
+   max-height: 60px;    
 }
 .banniere{
     grid-area: banniere;
-    order: 2;
     margin-left: 60px;
+    order: 2;
 }
 .prenom{
     color: #FFCC00;
@@ -213,15 +213,17 @@ h1, span.couleurJaune{
     margin-top: 60px;
     margin-bottom: 30px;
     letter-spacing: 0.239em;
+    text-align: left;
 }
 .couleurJaune{
-    border-bottom: 3px solid #FFCC00;    
+    border-bottom: 2px solid #FFCC00;           
 }
 .conteneurFormation, .conteneurExperience, .conteneurRecommandation{
     margin: 0px;
     padding: 5px;
     display: flex;
-    flex-direction: row;    
+    flex-direction: row;
+    box-shadow: none;  
 }
 .dateFormation, .dateExperience{
     min-height: 90px;
@@ -267,26 +269,24 @@ p.deuxiemePuce{
     background: url('images/puce2.png') no-repeat left;     
 }
 .souligne{
-    border-bottom: 4px solid #FFCC00;
+    border-bottom: 3px solid #FFCC00;
     font-size: 30px;
     font-weight: bold;
-    padding: 5px 0px 10px 45px;
+    padding: 25px 0px 10px 80px;
 }
 .mortier{
     background: url("images/mortier.png") no-repeat  center left;
-    margin: 65px 0px 8px 0px;    
-    
+    margin: 20px 0px 8px 0px;
+            
 }
 .entreprise{
-    background: url("images/entreprise.png") no-repeat  center left;
-    padding: 5px 0px 10px 45px;
+    background: url("images/cartable.png") no-repeat  center left;
     margin-top: 25px;
    
 }
 .stylo{
     background: url("images/stylo.png") no-repeat  center left;
-    padding: 5px 0px 10px 45px;
-    margin-top: 50px;    
+    margin-top: 100px;    
 }
 h4{
     font-size: 20px;
@@ -300,7 +300,6 @@ p{
     font-weight: lighter;
 }
 .lieu{
-    padding-left: 15px;
     margin-top: 0px;
     font-weight: bold;
 }
