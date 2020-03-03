@@ -168,6 +168,10 @@ body{
     grid-area: avatar;
     order: 1;      
 }
+img.photo{
+    border-radius: 100%;
+    border: solid rgb(241, 223, 149);
+}
 #contact, #aproposdemoi, #loisirs{
     background-color: #333;
     color: #FFCC00;
@@ -188,7 +192,7 @@ p.apropos{
     margin: 30px auto;
 }
 #loisirs{
-    margin-top: 600px;
+    margin-top: auto;
 }
 .picto{    
    max-height: 60px;    
